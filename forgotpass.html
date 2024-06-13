@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgot.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link type="image/png" sizes="120x120" rel="icon" href="img/CatIcon.png">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Forgot Password</h2>
+        <form action="#" id="forgot-form">
+            <div class="input-field">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+            <button type="submit" class="reset">Reset Password</button>
+            <p>Remembered your password? <a href="login.html" class="login">Log In</a></p>
+        </form>
+        <div id="new-password-form" style="display: none;">
+            <h2>Create New Password</h2>
+            <form action="#" id="new-password-form">
+                <div class="input-field">
+                    <input type="password" id="new-password" placeholder="New Password" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="confirm-new-password" placeholder="Confirm New Password" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <button type="submit" class="reset">Reset Password</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('forgot-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('forgot-form').style.display = 'none';
+            document.getElementById('new-password-form').style.display = 'block';
+        });
+
+        document.getElementById('new-password-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you would add the code to actually reset the password
+            // For demonstration purposes, let's assume the password is reset successfully
+            alert("Password reset successfully!");
+            // Redirect to the login page
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    background: url('../img/loginbg.gif') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.wrapper h2 {
+    font-size: 24px;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #fcf9f9;
+    width: 100%;
+    height: 40px;
+    padding: 10px 40px 10px 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-field input[type="email"]:focus,
+.input-field input[type="password"]:focus {
+    border-color: #6f00ff;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+a.login {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.login:hover {
+    text-decoration: underline;
+}
+
+.wrapper .reset  {
+    background: linear-gradient(135deg, #ffffff, #f8f8f8);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 150px;
+    height: 40px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset a {
+    text-decoration-line: none;
+    font-weight: 600;
+    color: black;
+}
+
+.wrapper .reset:hover {
+    background: linear-gradient(135deg, #6f00ff, #8a2be2);
+    transform: translateY(-2px);
+}

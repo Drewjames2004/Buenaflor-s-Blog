@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top"><i class="ph ph-arrow-circle-up"></i></button>
+    <a id="head"></a>
+    <section id="HomeBg">
+        <h1 style="margin-top: 10%; font-size: clamp(20px, 8vw, 80px);">Welcome to My Blog</h1>
+        <p>
+        <marquee behavior="scroll" direction="left">
+            <img src="img/bird.gif"/>
+          </marquee>
+        </p>
+    </section>
+    <header>
+        <div class="logo"><a href="#head">Andrew's Blog</a></div>
+        <button id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav">
+            <a href="#home" class="nav-item is-active">Home</a>
+            <a href="#blog" class="nav-item">Blog</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#hobbies" class="nav-item">Gallery</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <div class="nav-indicator"></div>
+        </nav>
+        <div class="logo"><a href="Login.html">Log Out</a></div>
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <main id="home">
+        <div class="home">
+            <div class="home-text">
+              <h2>Hello I'm Andrew <i class="ph-bold ph-hand-waving"></i></h2>
+              <h3>BS-Computer Science Student</h3>
+              <p>I'm Studying at NEMSU,
+                and i'm very passionate and dedicated to learn frontend and backend programming.</p>
+              <div class="home-btn">
+                <a href="#aboutme" class="btn">Explore <i class="ph ph-magnifying-glass"></i></a>
+              </div>
+            </div>
+            <div class="home-img">
+              <img src="img/profile.gif" />
+            </div>
+        </div>
+          <div class="socials-icons">
+            <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-bold ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+          </div>
+          <div style="  background-color: #333; color: white;
+          padding: 1em 0;
+          text-align: center;">
+            <h1 style="text-align: center;">Video Editing Blog</h1>
+          </div>
+          <a id="blog"></a>
+          <div class="main">
+            <div class="post">
+                <img src="img/1.png" alt="Video Editing Sample">
+                <h2>Mastering the Basics of Video Editing</h2>
+                <p>Learn the fundamental techniques and tools that every video editor should know. This guide covers the basics to get you started on your editing journey.</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="post">
+                <img src="img/2.png" alt="Video Editing Sample">
+                <h2>Advanced Editing Techniques</h2>
+                <p>Take your video editing skills to the next level with these advanced techniques. From color grading to motion graphics, discover how to enhance your videos.</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="post">
+                <img src="img/3.png" alt="Video Editing Sample">
+                <h2>Choosing the Right Software</h2>
+                <p>With so many video editing software options available, how do you choose the right one for your needs? This post compares the top software choices in the market.</p>
+                <a href="#">Read more</a>
+            </div>
+          </div>
+        <a id="aboutme"></a>
+        <section id="about">
+            <div class="glass-container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p><strong>Name:</strong> Andrew James Buenaflor</p>
+                    <p><strong>Age:</strong> 19 years old</p>
+                    <p><strong>Nationality:</strong> Filipino</p>
+                    <p><strong>Address:</strong> Prk. Langka Balilahan, Mabua, Tandag City, SDS.</p>
+                    <p><strong>Phone:</strong> 09700271889</p>
+                    <p><strong>Email:</strong> ajlbuenaflor@nemsu.edu.ph</p>
+                    <p><strong>Languages:</strong> Filipino, English</p>
+                </div>
+                <div class="about-image">
+                    <p><img src="img/catt.png" alt="Sample Image"></p>
+                    <img src="img/me.png" alt="Sample Image">
+                </div>
+            </div>
+        </section>
+        <div id="hobbies">
+            <blockquote>
+                <h2 style="font-size: xx-large;">Gallery</h2>
+                <div class="pol">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/fam.png" alt="" />
+                        </div>
+                        <p>My Fam</p>
+                    </div>
+                </div>
+                <div class="pol">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/friend.png" alt="" />
+                        </div>
+                        <p>My Friends</p>
+                    </div>
+                </div>
+                <div class="pol">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/me.png" alt="" />
+                        </div>
+                        <p>Just Me</p>
+                    </div>
+                </div>            
+            </blockquote>
+        </div>
+    </main>
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: albuenaflor@nemsu.edu.ph</p>
+        <p>Phone: 09700271889</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top"><i class="ph ph-arrow-circle-up"></i></button>
+    <a id="head"></a>
+    <section id="HomeBg">
+        <h1 style="margin-top: 10%; font-size: clamp(20px, 8vw, 80px);">Welcome to My Blog</h1>
+        <p>
+        <marquee behavior="scroll" direction="left">
+            <img src="img/bird.gif"/>
+          </marquee>
+        </p>
+    </section>
+    <header>
+        <div class="logo"><a href="#head">Andrew's Blog</a></div>
+        <button id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav">
+            <a href="#home" class="nav-item is-active">Home</a>
+            <a href="#blog" class="nav-item">Blog</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#hobbies" class="nav-item">Gallery</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <div class="nav-indicator"></div>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+    <header>
+        <h1>Video Editing Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#techniques">Editing Techniques</a></li>
+                <li><a href="#tips">Editing Tips</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Introductory paragraph about the importance and artistry of video editing.</p>
+        </section>
+
+        <section id="techniques">
+            <h2>Editing Techniques</h2>
+            <p>Explanation of various video editing techniques such as color grading, transitions, and effects.</p>
+        </section>
+
+        <section id="tips">
+            <h2>Editing Tips</h2>
+            <p>Tips and best practices for enhancing your video editing skills and workflow.</p>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Showcase of cinematic video editing examples with before and after images or videos.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information and social media links for further inquiries and discussions.</p>
+        </section>
+    </main>
+
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: albuenaflor@nemsu.edu.ph</p>
+        <p>Phone: 09700271889</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
